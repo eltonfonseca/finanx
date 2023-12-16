@@ -6,19 +6,23 @@ defmodule Finanx do
   You must to use the `Finanx.data/2` function to get the data from a specific stock or fund.
   The first argument is the type of the ticker, the second is the ticker of the stock or fund.
 
+  ```elixir
   %{:ok, data} = Finanx.data(:stock, "AAPL")
+  ```
 
   ## Output:
 
-  %{
-    ticker: "Apple Inc.",
-    price_us: 148.56,
-    price_br: 900.56,
-    variation: 45.56,
-    pl: 31.47,
-    pvp: 49.56,
-    dy: 0.56,
-  }
+  ```elixir
+    %{
+      ticker: "Apple Inc.",
+      price_us: 148.56,
+      price_br: 900.56,
+      variation: 45.56,
+      pl: 31.47,
+      pvp: 49.56,
+      dy: 0.56,
+    }
+  ```
   """
 
   alias Finanx.Crawler

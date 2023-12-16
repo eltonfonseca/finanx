@@ -27,6 +27,7 @@ defmodule Finanx.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.11.1"},
+      {:ex_doc, "~> 0.31", only: :dev, runtime: false},
       {:floki, "~> 0.35.0"},
       {:httpoison, "~> 2.2.1"}
     ]
