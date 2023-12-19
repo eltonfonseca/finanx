@@ -43,7 +43,7 @@ defmodule Finanx do
   def quotes(type, ticker) do
     with {:ok, host} <- InvestorTen.new(%{type: type}),
          {:ok, data} <- Crawler.quotes(host, ticker) do
-      {:ok, data}
+      data
     else
       {:error, reason} ->
         {:error, reason}
