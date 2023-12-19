@@ -29,7 +29,7 @@ defmodule Finanx.MixProject do
       {:ecto, "~> 3.11.1"},
       {:ex_doc, "~> 0.31", only: :dev, runtime: false},
       {:floki, "~> 0.35.0"},
-      {:httpoison, "~> 2.2.1"}
+      {:req, "~> 0.4.8"}
     ]
   end
 
